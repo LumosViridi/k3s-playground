@@ -108,3 +108,7 @@ Install K3S on the worker node
 #### Apps and Games
 - Jellyfin
 - Minecraft 
+
+#### Coming Soon!
+- Vault
+- LongHorn
