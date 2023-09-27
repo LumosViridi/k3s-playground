@@ -19,7 +19,7 @@ spec:
     readOnly: false
     # volumeHandle format: {nfs-server-address}#{sub-dir-name}#{share-name}
     # make sure this value is unique for every share in the cluster
-    volumeHandle: 10.20.0.30#volume1#k8s-nfs#mysql-10gb-nfs
+    volumeHandle: 10.66.10.5#volume1#k8s-nfs#mysql-10gb-nfs
     volumeAttributes:
-      server: 10.20.0.30
+      server: 10.66.10.5
       share: /volume1/k8s-nfs/mysql-10gb-nfs
