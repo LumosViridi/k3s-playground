@@ -10,10 +10,10 @@ resource "kubernetes_namespace" "jellyfin" {
 
 # Apply all yaml files in jellyfin folder
 resource "kubectl_manifest" "jellyfin" {
-  for_each = fileset("${path.module}/../jellyfin", "*.yaml")
+  for_each = fileset("${path.module}/../apps/jellyfin", "*.yaml")
 
   override_namespace = kubernetes_namespace.jellyfin.metadata.0.name
-  yaml_body          = file("${path.module}/../jellyfin/${each.value}")
+  yaml_body          = file("${path.module}/../apps/jellyfin/${each.value}")
 
   depends_on = [
     helm_release.metallb,
