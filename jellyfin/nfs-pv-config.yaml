@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jellyfin-pv-nfs-config
+  namespace: jellyfin
+spec:
+  storageClassName: nfs-csi
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    path: /volume1/k8s-nfs/jellyfin
+    server: 10.66.10.5
+    readOnly: false
