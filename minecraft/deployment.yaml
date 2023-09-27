@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minecraft
+spec:
+  selector:
+    matchLabels:
+      app: minecraft
+  template:
+    metadata:
+      labels:
+        app: minecraft
+    spec:
+      containers:
+      - image: itzg/minecraft-server:latest
+        name: minecraft
+        env:
+        - name: EULA
+          value: "TRUE"
+        ports:
+        - containerPort: 25565
+          name: minecraft-rcon
+        volumeMounts:
+        - name: minecraft
+          mountPath: /data
+      volumes:
+      - name: minecraft
+        persistentVolumeClaim:
+          claimName: minecraft
+      restartPolicy: Always
