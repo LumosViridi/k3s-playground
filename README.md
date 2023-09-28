@@ -7,7 +7,7 @@ Each Pi has a 64Gb Flash drive and a high performance 32Gb SD card.
 
 Pod storage is on my Synology NAS which is backed up frequently to AWS S3 Glacier
 
-✨ Fun Fact: I named my nodes after droids from Star Wars! They are R2D2, C3PO, BB8 and IG11.
+✨ Fun Fact: I named my nodes after droids from Star Wars! They are R2-D2, C-3PO, BB-8 and IG-11.
 
 
 ## Configuration
