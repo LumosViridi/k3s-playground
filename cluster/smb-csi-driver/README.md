@@ -1,5 +1,9 @@
 # CSI Driver for SMB
-https://github.com/kubernetes-csi/csi-driver-smb
+
+After messing with this for hours and finally getting it working, I've decided to switch to Helm. 
+
+<https://github.com/kubernetes-csi/csi-driver-smb>
+
 ## Create smb credentials secret for nodes
 
 ``` bash

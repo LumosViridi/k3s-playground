@@ -1,9 +1,14 @@
-#MetalLB
+# MetalLB
+
+## Helm Chart
+
+<https://metallb.github.io/metallb>
+
 ## MetalLB Requires you to uninstall Traefik:
 
 If you have any issues with doing this, here’s a good reference:
 
-[Uninstall Traefik on existing cluster](https://github.com/k3s-io/k3s/issues/1160#issuecomment-1299212589)
+[Uninstalling Traefik on an Existing Cluster](https://github.com/k3s-io/k3s/issues/1160#issuecomment-1299212589)
 
 
     helm -n kube-system delete traefik traefik-crd

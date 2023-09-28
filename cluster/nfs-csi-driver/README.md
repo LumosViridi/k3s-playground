@@ -1,6 +1,10 @@
 # How to install
-# CSI Driver for NFS
-https://github.com/kubernetes-csi/csi-driver-nfs
+
+After messing with this for hours and finally getting it working, I've decided to switch to Helm.
+
+## CSI Driver for NFS
+
+<https://github.com/kubernetes-csi/csi-driver-nfs>
 
 ``` bash
 helm repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
