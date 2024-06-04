@@ -12,5 +12,5 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   nfs:
     path: /volume1/k8s-nfs/jellyfin
-    server: 10.66.10.5
+    server: 192.168.x.x
     readOnly: false

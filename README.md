@@ -117,4 +117,4 @@ To install k3s on the worker node we first need the token from Master
 
 Install K3S on the worker node
 
-    curl -sfL https://get.k3s.io | K3S_NODE_NAME="node01" K3S_URL="https://10.66.x.x:6443" K3S_TOKEN="token from above step" sh -
+    curl -sfL https://get.k3s.io | K3S_NODE_NAME="node01" K3S_URL="https://192.168.x.x:6443" K3S_TOKEN="token from above step" sh -

@@ -12,5 +12,5 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   nfs:
     path: /volume2/Media2          
-    server: 10.66.10.5
+    server: 192.168.x.x
     readOnly: false

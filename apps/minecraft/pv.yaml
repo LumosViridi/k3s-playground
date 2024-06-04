@@ -19,9 +19,9 @@ spec:
     readOnly: false
     # volumeHandle format: {smb-server-address}#{sub-dir-name}#{share-name}
     # make sure this value is unique for every share in the cluster
-    volumeHandle: 10.66.10.5/k8s##minecraft
+    volumeHandle: 192.168.x.x/k8s##minecraft
     volumeAttributes:
-      source: "//10.66.10.5/k8s/minecraft"
+      source: "//192.168.x.x/k8s/minecraft"
     nodeStageSecretRef:
       name: smbcreds
       namespace: default
